@@ -1,0 +1,9 @@
+LOG_LEVEL			: 64
+beam				: 9.0
+max_active			: 5000
+acoustic_scale		: 12
+allow_partial		: 1
+min_chunk_ms		: 200
+check_max_seconds	: 0
+dither				: 0.0
+frame_skip			: 2

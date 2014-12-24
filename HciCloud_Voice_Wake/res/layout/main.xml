@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="6dip"
+     >
+	<TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="28sp"
+        android:gravity="center_horizontal"/>
+
+	<TextView
+        android:id="@+id/description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:textSize="18sp"/>
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/wake_words_title"
+	        />
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/wake_words_value"
+	        android:textColor="@color/blue"
+	        />
+	</LinearLayout>
+		
+    <TextView
+        android:id="@+id/logview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hcicloudttsexample" />
+
+    <TextView
+        android:id="@+id/threshold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/threshold" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:progress="30"
+        android:max="100" />
+	
+	<Button
+	    android:id="@+id/begin_recog_real_time_mode"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="15dp"
+	    android:text="@string/recog_real_time_mode" />
+	
+	<TextView
+        android:id="@+id/stateview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/state" />
+	
+	<TextView
+        android:id="@+id/errorview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/error" />
+	
+	<TextView
+	    android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/result" />
+			
+	<TextView
+        android:id="@+id/resultview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp" />
+</LinearLayout>

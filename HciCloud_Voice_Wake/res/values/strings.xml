@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="title">灵云语音唤醒示例</string>
+	<string name="description">点击“启动”按钮后，读出唤醒词即可唤醒。</string>
+	<string name="wake_words_title">默认唤醒词：</string>
+	<string name="wake_words_value">灵云唤醒、灵云语音</string>
+	<string name="threshold">阀值 :</string>
+    <string name="hcicloudttsexample"></string>
+    <string name="beginrecog">开始识别</string>
+    <string name="stop">停止</string>
+    <string name="app_name">灵云语音唤醒</string>
+	<string name="state">识别状态：</string>
+	<string name="result">识别结果：</string>
+	<string name="error">错误信息：</string>
+	<string name="recog_real_time_mode">开始唤醒</string>
+	<string name="grammar_text">唤醒词列表</string>
+	<string name="grammar_seperator">" | "</string>
+	<string name="show_error_code_is">错误码为：</string>
+</resources>
