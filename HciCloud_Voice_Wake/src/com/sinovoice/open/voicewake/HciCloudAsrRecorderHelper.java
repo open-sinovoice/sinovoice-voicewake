@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.io.InputStream;
 
 import android.content.Context;
+import android.media.MediaPlayer;
+import android.media.MediaPlayer.OnCompletionListener;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
@@ -234,8 +236,19 @@ public class HciCloudAsrRecorderHelper {
 					
 					int shreshold = mActivity.getShreshold();
 					if(score >= shreshold){
-						sResult = result + "\n分值：" + score;						
+						sResult = result + "\n分值：" + score;		
+						MediaPlayer mp=MediaPlayer.create(mContext, R.raw.alert);
+						mp.start();
+						mp.setOnCompletionListener(new OnCompletionListener() {
+							
+							@Override
+							public void onCompletion(MediaPlayer mp) {
+								mp.release();
+								mp = null;
+							}
+						});
 					}
+				
 				} else {
 					sResult = "未能正确识别,请重新输入";
 				}
